@@ -1,0 +1,83 @@
+.to-do-list__container {
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(255, 255, 255, 0.01);
+  backdrop-filter: blur(20px);
+  border-radius: 10px;
+  height: 80vh;
+  width: 80vw;
+  margin: auto;
+  box-shadow: 0px 0px 100px -30px rgba(0, 0, 0, 0.75);
+}
+
+.to-do-list__header {
+  height: 3rem;
+  background-color: rgba(24, 1, 138, 0.342);
+  color: white;
+  font-weight: 600;
+  font-size: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+.list-of-items__container {
+  padding-top: 3rem;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+.list-of-items {
+  list-style-type: none;
+  color: white;
+}
+button {
+  padding: 10px 20px;
+  font-weight: 600;
+  border: none;
+  margin: 0.2rem;
+  border-radius: 10px;
+  color: white;
+  background-color: rgba(24, 1, 138, 0.342);
+}
+button:hover {
+  background-color: rgba(24, 1, 138, 0.208);
+  cursor: pointer;
+}
+input {
+  background-color: rgba(24, 1, 138, 0.342);
+  color: white;
+  border: none;
+  border-radius: 10px;
+  margin: 0.2rem;
+  width: 20rem;
+  padding: 10px 20px;
+  margin-bottom: 3rem;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 1.2rem;
+  &:focus {
+    outline: blue solid 1px;
+    transition: 0s;
+  }
+}
+
+.delete-button {
+  background-color: rgba(255, 0, 0, 0.3);
+  &:hover {
+    background-color: rgba(255, 0, 0, 0.5);
+  }
+}
+.move-button {
+  background-color: rgba(128, 128, 128, 0.3);
+  &:hover {
+    background-color: rgba(128, 128, 128, 0.5);
+  }
+}
+.add-button {
+  background-color: rgba(0, 255, 0, 0.3);
+  font-size: 1.2rem;
+  &:hover {
+    background-color: rgba(0, 255, 0, 0.5);
+  }
+}
