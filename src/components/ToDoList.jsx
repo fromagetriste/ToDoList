@@ -55,7 +55,7 @@ const ToDoList = () => {
         <div>
           <input
             type="text"
-            maxLength="50"
+            maxLength="30"
             placeholder="Enter a task ..."
             value={newTask}
             onChange={handleInputChange}
