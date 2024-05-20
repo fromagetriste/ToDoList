@@ -1,14 +1,12 @@
 .to-do-list__container {
   align-items: center;
   justify-content: center;
-  background-color: rgb(255, 255, 255, 0.005);
-  backdrop-filter: blur(5px);
   border-radius: 10px;
   height: fit-content;
   width: 80vw;
   margin: auto;
   margin-bottom: 4rem;
-  box-shadow: 0px 0px 100px -30px rgba(0, 0, 0, 0.75);
+  //box-shadow: 0px 0px 100px -30px rgba(0, 0, 0, 0.75);
 }
 
 .to-do-list__header {
@@ -100,4 +98,24 @@ li {
 .text {
   flex: 1; // raccourci qui équivaut à faire flex-grow: 1 ; flex-shrink: 1, flex-basis: 0%;
   padding-right: 1rem;
+}
+
+@media screen and (max-width: 600px) {
+  /* Insérez vos propriétés CSS ici, avec vos sélecteurs*/
+  .to-do-list__container {
+    box-shadow: none;
+  }
+  input {
+    margin-bottom: 1rem;
+  }
+  .add-button {
+    margin-bottom: 1rem;
+    padding: 8px 35px;
+  }
+  button {
+    padding: 8px;
+  }
+  .text {
+    padding-right: 0.5rem;
+  }
 }
