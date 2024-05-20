@@ -112,7 +112,13 @@ li {
     margin-bottom: 1rem;
     padding: 8px 35px;
   }
-
+  li {
+    flex-direction: column;
+  }
+  .mobile-container {
+    display: flex;
+    margin-top: 0.5rem;
+  }
   .list-of-items {
     min-width: 360px;
   }

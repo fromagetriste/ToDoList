@@ -55,7 +55,7 @@ const ToDoList = () => {
         <div>
           <input
             type="text"
-            maxLength="25"
+            maxLength="50"
             placeholder="Enter a task ..."
             value={newTask}
             onChange={handleInputChange}
@@ -68,21 +68,26 @@ const ToDoList = () => {
           {tasks.map((task, index) => (
             <li key={index}>
               <span className="text">{task}</span>
-              <button
-                className="delete-button"
-                onClick={() => deleteTask(index)}
-              >
-                Delete
-              </button>
-              <button className="move-button" onClick={() => moveTaskUp(index)}>
-                👆
-              </button>
-              <button
-                className="move-button"
-                onClick={() => moveTaskDown(index)}
-              >
-                👇
-              </button>
+              <div className="mobile-container">
+                <button
+                  className="delete-button"
+                  onClick={() => deleteTask(index)}
+                >
+                  Delete
+                </button>
+                <button
+                  className="move-button"
+                  onClick={() => moveTaskUp(index)}
+                >
+                  👆
+                </button>
+                <button
+                  className="move-button"
+                  onClick={() => moveTaskDown(index)}
+                >
+                  👇
+                </button>
+              </div>
             </li>
           ))}
         </ol>
